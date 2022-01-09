@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_diary' %}
+{%- set path='diary/mammy.html' %}
+
+{% block ogp_title %}マミータイプの成長日記{% endblock %}
+{% block ogp_description -%}マミータイプのサマーブーケの栽培・生育過程を紹介します。{%- endblock %}
+{% block ogp_url %}{{ site['url'] }}diary/mammy.html{% endblock %}
+{% block ogp_site_name %}マミータイプの成長日記{% endblock %}
+
+{% block header %}
+    <header class="title">
+      <section class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2><i class="fa fa-female"></i>マミータイプの成長日記</h2>
+            <p>マミータイプのサマーブーケの栽培・生育過程を紹介します。</p>
+          </div>
+        </div><!-- row -->
+      </section>
+    </header><!-- header -->
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <section class="col-lg-9">
+          <div class="row article">
+            <h3>生育状況</h3>
+            <div class="col-lg-6">
+              <p>
+                キッズタイプ＆ダディタイプ同様に植え込みます。<br />
+                植え込んだら、グリーンカーテンにしたい場所へ設置。<br />
+                支柱は壁にしっかりと固定します。<br />
+                ネットは網目、１０ｃｍ位を使用します。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/growth_diary/mammy/20140508.jpg" alt="" width="400" />
+              <div>5月8日</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          <div class="row article">
+            <div class="col-lg-6">
+              <p>
+                植え込んで２週間、まだ蔓は伸びていませんが、株が一回り位成長しました。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/growth_diary/mammy/20140526.jpg" alt="" width="400" />
+              <div>5月26日</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          <div class="row article">
+            <div class="col-lg-6">
+              <p>
+                気温も徐々に上がり、蔓がネットに撒きついてきました。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/growth_diary/mammy/20140623.jpg" alt="" width="400" />
+              <div>6月23日</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          <div class="row article">
+            <div class="col-lg-6">
+              <p>
+                気温もさらに上がり、蔓も一気に伸びていきます。<br />
+                側枝も出てきて、下の方から徐々に密集してきました。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/growth_diary/mammy/20140717.jpg" alt="" width="400" />
+              <div>7月17日</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          <div class="row article">
+            <div class="col-lg-6">
+              <p>
+                あれから１週間、蔓の変化はあまり無いけど、花がたくさん咲いてきました。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/growth_diary/mammy/20140724.jpg" alt="" width="400" />
+              <div>7月24日</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          <div class="row article">
+            <div class="col-lg-6">
+              <p>
+                この頃には、側枝も充実して抜群です。<br />
+                みごとにグリーンカーテンになっています。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/growth_diary/mammy/20140805.jpg" alt="" width="400" />
+              <div>8月5日</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+        </section>
+        <aside class="col-lg-3">
+          <h3>その他のタイプの成長日記</h3>
+          <ul>
+            <li><a href="daddy.html">ダディタイプ</a></li>
+            <li><a href="kids.html">キッズタイプ</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div><!-- container -->
+{% endblock %}

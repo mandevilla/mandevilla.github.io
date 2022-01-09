@@ -1,0 +1,59 @@
+{% macro navigation(base_url) %}
+          <ul class="nav navbar-nav navbar-right">
+            <li id="nav_home"><a href="{{ base_url }}index.html"><i class="fa fa-home"></i>ホーム</a></li>
+            <li id="nav_varieties" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-star"></i>お取扱商品 <i class="fa fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ base_url }}varieties/index.html"><i class="fa fa-certificate"></i>全商品リスト</a></li>
+                <li><a href="{{ base_url }}varieties/daddy.html"><i class="fa fa-male"></i>ダディタイプ</a></li>
+                <li><a href="{{ base_url }}varieties/mammy.html"><i class="fa fa-female"></i>マミータイプ</a></li>
+                <li><a href="{{ base_url }}varieties/kids.html"><i class="fa fa-user"></i>キッズタイプ</a></li>
+<!--                <li><a href="{{ base_url }}varieties/soil.html"><i class="fa fa-refresh"></i>マンデビラ夏ものがたりの土</a></li> -->
+              </ul>
+            </li>
+            <li id="nav_growth"><a href="{{ base_url }}growth.html"><i class="fa fa-heart"></i>栽培管理</a></li>
+            <li id="nav_diary" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-pencil-square"></i>成長日記 <i class="fa fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ base_url }}diary/daddy.html"><i class="fa fa-male"></i>ダディタイプ</a></li>
+                <li><a href="{{ base_url }}diary/mammy.html"><i class="fa fa-female"></i>マミータイプ</a></li>
+                <li><a href="{{ base_url }}diary/kids.html"><i class="fa fa-user"></i>キッズタイプ</a></li>
+              </ul>
+            </li>
+            <li id="nav_shop" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-comments"></i>販売店向け情報 <i class="fa fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ base_url }}shop/index.html"><i class="fa fa-comments"></i>販売店向け情報</a></li>
+<!--                <li><a href="{{ base_url }}shop/cocoar.html"><i class="fa fa-music"></i>ココアル</a></li> -->
+              </ul>
+            </li>
+            <li id="nav_facebook"><a href="{{ base_url }}facebook.html"><i class="fa fa-facebook"></i>フェイスブック</a></li>
+          </ul>
+{%- endmacro %}
+
+{% macro sitemap(base_url) %}
+              <ul class="nav">
+                <li><a href="{{ base_url }}index.html"><i class="fa fa-home"></i>ホーム</a></li>
+                <li><a href="{{ base_url }}varieties"><i class="fa fa-star"></i>お取扱商品</a>
+                  <ul>
+                    <li><a href="{{ base_url }}varieties/index.html"><i class="fa fa-certificate"></i>全商品リスト</a></li>
+                    <li><a href="{{ base_url }}varieties/daddy.html"><i class="fa fa-male"></i>ダディタイプ</a></li>
+                    <li><a href="{{ base_url }}varieties/mammy.html"><i class="fa fa-female"></i>マミータイプ</a></li>
+                    <li><a href="{{ base_url }}varieties/kids.html"><i class="fa fa-user"></i>キッズタイプ</a></li>
+                    <li><a href="{{ base_url }}varieties/soil.html"><i class="fa fa-refresh"></i>マンデビラ夏ものがたりの土</a></li>
+                  </ul>
+                </li>
+                <li><a href="{{ base_url }}growth.html"><i class="fa fa-heart"></i>栽培管理</a></li>
+                <li><a href="{{ base_url }}diary"><i class="fa fa-pencil-square"></i>成長日記</a>
+                  <ul>
+                    <li><a href="{{ base_url }}diary/daddy.html"><i class="fa fa-male"></i>ダディタイプ</a></li>
+                    <li><a href="{{ base_url }}diary/mammy.html"><i class="fa fa-female"></i>マミータイプ</a></li>
+                    <li><a href="{{ base_url }}diary/kids.html"><i class="fa fa-user"></i>キッズタイプ</a></li>
+                  </ul>
+                </li>
+                <li><a href="{{ base_url }}shop"><i class="fa fa-comments"></i>販売店向け情報</a>
+                  <ul>
+                    <li><a href="{{ base_url }}shop/index.html"><i class="fa fa-comments"></i>販売店向け情報</a></li>
+                    <li><a href="{{ base_url }}shop/cocoar.html"><i class="fa fa-music"></i>ココアル</a></li>
+                  </ul>
+                </li>
+                <li><a href="{{ base_url }}facebook"><i class="fa fa-facebook"></i>フェイスブック</a></li>
+              </ul>
+{%- endmacro %}

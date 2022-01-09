@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_shop' %}
+{%- set path='shop/' %}
+
+{% block ogp_title %}効果的なポップの使い方などのご案内{% endblock %}
+{% block ogp_description -%}
+効果的なポップの使い方やよりお客様にアピールできる仕立て方法についてご紹介します。
+{%- endblock %}
+{% block ogp_url %}{{ site['url'] }}shop/{% endblock %}
+{% block ogp_site_name %}販売店向け情報{% endblock %}
+
+{% block header %}
+    <header class="title">
+      <section class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2><i class="fa fa-comments"></i>販売店向け情報</h2>
+            <p>効果的なポップの使い方やよりお客様にアピールできる仕立て方法についてご紹介します。</p>
+          </div>
+        </div><!-- row -->
+      </section>
+    </header><!-- header -->
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <h2 class="centered">販売店様向けの提案</h2>
+        <p>
+          豊明花きでは「マンデビラ夏ものがたり」を皆様に広く知っていただくため、また、どのように育てて使えば良いかをお知らせするために、販売店様へご提案をさせていただいております。
+        </p>
+        <section class="col-lg-9">
+<!--
+          <div class="row article">
+            <h3>&#9312;デカラベルポップで売り場作りを提案</h3>
+            <div class="col-lg-6">
+              <p>
+                2013年度販売分より特大ラベル型販促ポップを導入させていただきました。<br />
+                今までにないスタイルの活用で、お客様の目に止まる売り場作りに力を発揮すること間違いありません。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0205.jpg" alt="" />
+              <div>特大ラベル型ポップは存在感抜群です！</div>
+            </div>
+          </div>
+          <hr>
+-->
+          <div class="row article">
+            <h3>見本鉢でどのように仕立てるかを提案</h3>
+            <div class="col-lg-8 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0202.jpg" alt="" />
+              <div>コンパクトなキッズタイプはプランター仕立てがお勧めです！<br />※販売商品は赤＆ピンクの２色植えです</div>
+            </div>
+            <div class="col-lg-4 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0201.jpg" alt="" />
+              <div>伸びるダディタイプ、マミータイプはタワー仕立てがお勧めです！<br />※販売商品は赤＆ピンクの2色植えです</div>
+            </div>
+          </div><!-- row -->
+          <hr>
+
+          <div class="row article">
+            <h3>母の日向けギフト鉢花を提案</h3>
+            <p>
+              今期から認知度を上げるために母の日ギフトのアイテムとしてコンパクトに仕上がるキッズタイプを提案させていただきました。<br />
+              鮮やかな花色でお母さんもきっと喜ぶ鉢花の新しい提案です。
+            </p>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/image023.jpg" alt="" />
+              <div>コンパクトなキッズタイプはプランター仕立てがお勧めです！<br />※販売商品は赤＆ピンクの２色植えです</div>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/image022.jpg" alt="" />
+              <div>伸びるダディタイプ、マミータイプはタワー仕立てがお勧めです！<br />※販売商品は赤＆ピンクの2色植えです</div>
+            </div>
+          </div><!-- row -->
+        </section>
+        <aside class="col-lg-3">
+          <h3>取扱商品</h3>
+          <ul class="varieties">
+            <li><a href="/varieties/index.html"><img class="img-responsive" src="{{ media_url }}img/all.jpg" alt="" /></a></li>
+            <li><a href="/varieties/daddy.html"><img class="img-responsive" src="{{ media_url }}img/daddy.jpg" alt="" /></a></li>
+            <li><a href="/varieties/mammy.html"><img class="img-responsive" src="{{ media_url }}img/mammy.jpg" alt="" /></a></li>
+            <li><a href="/varieties/kids.html"><img class="img-responsive" src="{{ media_url }}img/kids.jpg" alt="" /></a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+{% endblock %}

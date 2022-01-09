@@ -1,0 +1,16 @@
+*~
+*.bak
+*.pyc
+*.orig
+site.cfg
+__pycache__
+.sass-cache
+data/image
+#site/html/media/img/facebook.jpg
+.python-version
+TODO.org
+
+#/site/html
+#!/site/html/media
+#/site/html/media/img/facebook/*.jpg
+#/site/templates/snippets/*.html

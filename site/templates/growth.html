@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_growth' %}
+{%- set path='growth.html' %}
+
+{% block ogp_title %}栽培管理方法{% endblock %}
+{% block ogp_description %}{{ site['title'] }}栽培管理方法について解説します。{% endblock %}
+{% block ogp_url %}{{ site['url'] }}growth.html{% endblock %}
+{% block ogp_site_name %}栽培管理方法{% endblock %}
+        
+{% block header %}
+    <header class="title">
+      <section class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2><i class="fa fa-heart"></i>栽培管理</h2>
+            <p>水遣りや施肥・病害虫管理についてお伝えします。また冬越しするにはちょっとしたコツがいりますよ。</p>
+          </div>
+        </div><!-- row -->
+      </section>
+    </header><!-- header -->
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <h2 class="centered">「マンデビラ夏ものがたり」の管理方法</h2>
+        <section class="col-lg-9">
+          <p>
+            「マンデビラ夏ものがたり」を綺麗に咲かせるために、以下のポイントに注意して育てましょう！
+          </p>    
+          <div class="row article">
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/IMG_2440.jpg" alt="" />
+              <div>こんもり綺麗に咲かせましょう！</div>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/IMG_8297.jpg" alt="" />
+              <div>アーチに仕立てにも向いています</div>
+            </div>
+          </div>
+
+          <div class="row article">
+            <h3>置き場所・・・太陽が大好きです！</h3>
+            <div class="col-lg-6">
+              <p>
+                日光が充分に当たるところに置いてください。<br />
+                日当たりが悪いと花が咲かなかったり、生育不良で葉が黄色くなることがあります。<br />
+                たっぷりの日光を浴びると植え付け後、約30〜40日ぐらいで花を咲かせます。<br />
+                <br />
+                ※キッズタイプについては花芽付きでの販売となっております。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0302.jpg" alt="" width="400" />
+              <div>日照不足だと葉の色が黄色くなります</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          
+          <div class="row article">
+            <h3>水遣り・・・乾燥させて下さい！</h3>
+            <div class="col-lg-6">
+              <p>
+                水遣りは土の表面が乾燥するまで待ち、土が乾いたらたっぷり水を与えてください。<br />
+                乾燥にはとても強く丈夫ですが、過湿には弱いため水の遣りすぎには注意してください。<br />
+                梅雨時・冬期には、ほとんど水を与えなくてもかまいません。<br />
+                水はけの良い土であれば雨が続いても大丈夫です。
+              </p>
+              <p>
+                そしてそんなマンデビラにぴったりの土があるんです。<a href="{{ base_url }}varieties/soil.html">マンデビラ夏ものがたりの土</a>は水はけを好むマンデビラ専用の培養土です。合わせてご利用ください。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/IMG_8269.jpg" alt="" />
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          
+          <div class="row article">
+            <h3>施肥・・・肥料が大好きです！</h3>
+            <div class="col-lg-6">
+              <p>
+                お花を綺麗に長く楽しむためには、多めの肥料が必要です。<br />
+                特に窒素(N)の補給が重要で、置き肥タイプの暖効性化成肥料(N:P:K=12:12:12)などを30日〜40日ごとに置くとより効果的です。<br />
+                また、置き肥の量は5号サイズで3粒、10号サイズで10粒を目安として下さい。<br />
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img//0303.jpg" alt="" width="400" />
+              <div>葉の表面や裏に黒い斑点が出来ると肥料不足のサインです</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          <div class="row article">
+            <h3>仕立て・・・上手につるを巻きましょう</h3>
+            <p>
+              伸びたつるは支柱やトレリスなどに巻きつけるのですが、いくつか注意点があります。<br />
+              つるは逆時計回りに巻いていきます(支柱を上から見た場合) 。<br />
+              この時につるの先端部を傷めたり、つるを折らないようにしましょう。<br />
+              つるを折るとそこから先が黒く変色してきますが、そうなった場合は折れた所から切ってやると下から新しい芽が出てきます。<br />
+              一度巻きつけてやればあとは自分で巻いていきます。巻きついて伸びていくときに自分の葉を挟んでしまう事があるので、見つけたらはずしてやりましょう。
+            </p>
+          </div><!-- row -->
+
+          <div class="row article">
+            <h3>病害虫・・・害虫に注意しましょう！</h3>
+            <div class="col-lg-6">
+              <p>
+                病気にはとても強く、連作障害も出にくいので、毎年同じ場所でも楽しめます。<br />
+                しかし、アブラムシ・ハダニ・コナジラミ・ヨトウムシの害虫には十分な注意が必要です。<br />
+                特に花芽の付く時期にオルトランなどを使って、アブラムシやハダニの事前駆除は効果的です。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0305.jpg" alt="" />
+              <div>花が咲かないときは蕾の中を確認してください</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          
+          <div class="row article">
+            <div class="col-lg-6">
+              <p>
+                また、花が咲かない時は蕾の中に虫がいないかも確認してください。<br />
+                薬剤の散布は花期(6月〜霜の降りる前まで)の間に2回程度行ってください。<br />
+                1回の分量は、葉からたれるぐらいたっぷりとかけてください。
+              </p>
+            </div>
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0306.jpg" alt="" />
+              <div>害虫を見つけたら定期的に薬剤を散布しましょう！</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          
+          <div class="row article">
+            <h3>冬越し・・・冬は室内に入れましょう！</h3>
+            <p>
+              冬越しに挑戦するなら鉢植えがお勧めです。<br />
+              秋になり気温が下がり始めたら葉の表面が黄色くなり落葉します。<br />
+              霜の降りる前に、地上部20cm〜30cmくらい残して、切り戻しをして屋内で管理してください。<br />
+              気温が5℃以下にならないように注意し、水は控えめに与えてください。
+            </p>
+          </div><!-- row -->
+          
+          <div class="row article">
+            <div class="col-lg-4 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0307.jpg" alt="" width="320" />
+              <div>冬越しに挑戦しましょう！</div>
+            </div><!-- col-lg-4 -->
+            <div class="col-lg-4 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0308.jpg" alt="" width="320" />
+              <div>地上部20cm〜30cmくらい残して切り戻すのがポイントです</div>
+            </div><!-- col-lg-4 -->
+            <div class="col-lg-4 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/0309.jpg" alt="" width="320" />
+              <div>翌年温かくなるとまた新芽が出てきます</div>
+            </div><!-- col-lg-4 -->
+          </div><!-- row -->
+        </section>
+        <aside class="col-lg-3">
+          <h3>取扱商品</h3>
+        <ul class="varieties">
+            <li><a href="{{ base_url }}varieties/index.html"><img class="img-responsive" src="{{ media_url }}img/all.jpg" alt="" /></a></li>
+            <li><a href="{{ base_url }}varieties/daddy.html"><img class="img-responsive" src="{{ media_url }}img/daddy.jpg" alt="" /></a></li>
+            <li><a href="{{ base_url }}varieties/mammy.html"><img class="img-responsive" src="{{ media_url }}img/mammy.jpg" alt="" /></a></li>
+            <li><a href="{{ base_url }}varieties/kids.html"><img class="img-responsive" src="{{ media_url }}img/kids.jpg" alt="" /></a></li>
+        </ul>
+        </aside>
+      </div>
+    </div><!-- container -->
+{% endblock %}
+
+{% block extra_script %}
+    <script>
+      $(function() {
+        $('#nav_growth').addClass('active');
+      })
+    </script>
+{% endblock %}
+        

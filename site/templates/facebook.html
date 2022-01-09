@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_facebook' %}
+{%- set path='facebook.html' %}
+
+{% block ogp_title %}フェイスブックページ{% endblock %}
+{% block ogp_description %}{{ site['title'] }}のフェイスブックページのご紹介です。{% endblock %}
+{% block ogp_url %}{{ site['url'] }}facebook.html{% endblock %}
+{% block ogp_site_name %}フェイスブックページ{% endblock %}
+
+{% block header %}
+    <header class="cover facebook">
+      <section class="container">
+      </section>
+    </header><!-- header -->        
+{% endblock %}
+
+{% block content %}
+    <section class="container">
+      <div class="row centered">
+        <div class="col-lg-12">
+          <p>
+            フェイスブックのページ<a href="http://www.facebook.com/mandevilla.natsumonogatari">「マンデビラ夏ものがたり」</a>の投稿をご紹介します
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row centered">
+        <div class="col-lg-12">
+          <h3>最新トピック</h3>
+        </div>
+      </div>
+      <div class="row article" id="facebook-page">
+{% include "snippets/facebook_page.html" %}
+      </div>
+    </section>
+{% endblock %}

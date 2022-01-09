@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_varieties' %}
+{%- set path='varieties/' %}
+
+{% block ogp_title %}取扱商品リスト{% endblock %}
+{% block ogp_description -%}半つる性のキッズタイプとつる性のダディタイプ、マミータイプの商品ラインナップです。{%- endblock %}
+{% block ogp_url %}{{ site['url'] }}varieties/{% endblock %}
+{% block ogp_site_name %}全商品リスト{% endblock %}
+
+{% block header %}
+    <header class="title">
+      <section class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2><i class="fa fa-star"></i>全商品リスト</h2>
+            <p>半つる性のキッズタイプとつる性のダディタイプ、マミータイプの商品ラインナップです</p>
+          </div>
+        </div><!-- row -->
+      </section>
+    </header><!-- header -->
+{% endblock %}
+
+{% block content %}
+        
+    <!-- lineup -->
+    <section id="lineup" class="container">
+      <ul class="lineup-filter">
+        <li><a href="#" class="btn btn-default active" data-filter="*"><i class="fa fa-certificate all"></i>すべて</a></li>
+        <li><a href="#" class="btn btn-default" data-filter=".daddy"><i class="fa fa-male daddy"></i>ダディタイプ</a></li>
+        <li><a href="#" class="btn btn-default" data-filter=".mammy"><i class="fa fa-female mammy"></i>マミータイプ</a></li>
+        <li><a href="#" class="btn btn-default" data-filter=".kids"><i class="fa fa-user kids"></i>キッズタイプ</a></li>
+      </ul>
+
+      <ul class="lineup-items">
+        <li class="lineup-item daddy">
+          <h5><i class="fa fa-male daddy"></i>ローズジャイアント</h5>
+          <img class="photo" src="{{ media_url }}img/photos/01.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />濃ピンク</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />アーチ・フェンス</li>
+          </ul>
+        </li>
+        <li class="lineup-item mammy">
+          <h5><i class="fa fa-female mammy"></i>サマーブーケ</h5>
+          <img class="photo" src="{{ media_url }}img/photos/02.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />黄色</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />フェンス・アンドン</li>
+          </ul>
+        </li>
+        <li class="lineup-item daddy">
+          <h5><i class="fa fa-male daddy"></i>ホワイトデライト</h5>
+          <img class="photo" src="{{ media_url }}img/photos/03.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />白(薄ピンク)</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />アーチ・フェンス</li>
+          </ul>
+        </li>
+        <li class="lineup-item daddy">
+          <h5><i class="fa fa-male daddy"></i>ルビースター</h5>
+          <img class="photo"  src="{{ media_url }}img/photos/04.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />濃赤</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />アーチ・フェンス</li>
+          </ul>
+        </li>
+        <li class="lineup-item daddy">
+          <h5><i class="fa fa-male daddy"></i>アリスデライト</h5>
+          <img class="photo" src="{{ media_url }}img/photos/05.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />淡ピンク</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />フェンス</li>
+          </ul>
+        </li>
+        <li class="lineup-item mammy">
+          <h5><i class="fa fa-female mammy"></i>サマードレス</h5>
+          <img class="photo" src="{{ media_url }}img/photos/06.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />白</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+          </ul>
+        </li>
+        <li class="lineup-item daddy">
+          <h5><i class="fa fa-male daddy"></i>レッドインパクト</h5>
+          <img class="photo" src="{{ media_url }}img/photos/07.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />赤</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />アーチ・フェンス</li>
+          </ul>
+        </li>
+        <li class="lineup-item daddy">
+          <h5><i class="fa fa-male daddy"></i>ブライドカスケード</h5>
+          <img class="photo" src="{{ media_url }}img/photos/08.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />白</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />アーチ・フェンス</li>
+          </ul>
+        </li>      
+        <li class="lineup-item kids">
+          <h5><i class="fa fa-user kids"></i>リオ・ピンク</h5>
+          <img class="photo" src="{{ media_url }}img/photos/09.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />ピンク</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+          </ul>
+        </li>
+        <li class="lineup-item kids">
+          <h5><i class="fa fa-user kids"></i>リオ・ディープレッド</h5>
+          <img class="photo" src="{{ media_url }}img/photos/10.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />赤</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+          </ul>
+        </li>
+        <li class="lineup-item kids">
+          <h5><i class="fa fa-user kids"></i>リオ・ホットピンク</h5>
+          <img class="photo" src="{{ media_url }}img/photos/11.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />濃ピンク</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+          </ul>
+        </li>
+        <li class="lineup-item kids">
+          <h5><i class="fa fa-user kids"></i>リオ・ライトピンク</h5>
+          <img class="photo" src="{{ media_url }}img/photos/12.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />薄ピンク</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+          </ul>
+        </li>
+        <li class="lineup-item kids">
+          <h5><i class="fa fa-user kids"></i>アロハ・ブライトピンク</h5>
+          <img class="photo" src="{{ media_url }}img/photos/13.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />濃ピンク</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+          </ul>
+        </li>
+        <li class="lineup-item kids">
+          <h5><i class="fa fa-user kids"></i>アロハ・リーガルルビー</h5>
+          <img class="photo" src="{{ media_url }}img/photos/14.jpg" alt=""/>
+          <ul>
+            <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />濃赤</li>
+            <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+            <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- lineup -->
+    <section class="container">
+      <div class="row centered">
+        <h2>「マンデビラ夏ものがたり」のラインナップ</h2>
+        <div class="col-lg-4">
+          <div>
+            <a href="daddy.html"><img class="img-responsive" src="{{ media_url }}img/daddy.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <a href="mammy.html"><img class="img-responsive" src="{{ media_url }}img/mammy.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <a href="kids.html"><img class="img-responsive" src="{{ media_url }}img/kids.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div><!-- row -->
+    </section><!-- lineup -->
+{% endblock %}
+
+{% block extra_script %}
+    <script src="{{ media_url }}js/isotope.pkgd.min.js"></script>
+    <script>
+      $(window).load(function() {
+        var $container = $('.lineup-items');
+        $container.isotope({
+          filter: '*',
+          animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+          }
+        });
+ 
+        $('.lineup-filter a').click(function() {
+          $('.lineup-filter .active').removeClass('active');
+          $(this).addClass('active');
+ 
+          var selector = $(this).attr('data-filter');
+          $container.isotope({
+            filter: selector,
+            animationOptions: {
+              duration: 750,
+              easing: 'linear',
+              queue: false
+            }
+          });
+          return false;
+        }); 
+      });   
+    </script>
+{% endblock %}

@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_home' %}
+{%- set path='index.html' %}
+
+{% block header %}
+    <header class="cover">
+      <section class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1>太陽が大好きな花！</h1>
+          </div>
+        </div><!-- row -->
+      </section>
+    </header><!-- header -->
+{% endblock %}
+
+{% block content %}
+<!-- lineup -->
+    <section class="container">
+      <div class="row">
+        <h2 class=" centered">「マンデビラ夏ものがたり」のラインナップ</h2>
+        <div class="col-lg-4">
+          <div class="tilt">
+            <a href="{{ base_url }}varieties/daddy.html"><img class="img-responsive" src="{{ media_url }}img/daddy.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="tilt">
+            <a href="{{ base_url }}varieties/mammy.html"><img class="img-responsive" src="{{ media_url }}img/mammy.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="tilt">
+            <a href="{{ base_url }}varieties/kids.html"><img class="img-responsive" src="{{ media_url }}img/kids.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div><!-- row -->
+    </section><!-- lineup -->
+
+    <!-- calendar -->
+    <section class="container">
+      <div class="row centered">
+        <div class="col-lg-12">
+          <img class="img-responsive" src="{{ media_url }}img/calendar.jpg" alt="">
+        </div>
+      </div><!-- row -->
+    </section><!-- calendar -->
+
+    <section class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- feature -->
+          <section id="feature">
+            <div class="row article">
+              <h2 class="centered">「マンデビラ夏ものがたり」ってどんな花</h2>
+              <div class="col-lg-6">
+                <p>
+                  「マンデビラ夏ものがたり」(学名Mandevilla)はキョウチクトウ科マンデビラ属の植物です。
+                  和名はチリソケイ属とされていますが、あまり流通されておらず、マンデビラまたは旧属名のデプラデニアと呼ばれています。<br />
+                  ちなみに名前の由来はブエノスアイレス駐在のイギリス公使だった‘マンデビル‘によるものだそうです。<br />
+                  性質はつる性で原種はメキシコからアルゼンチンを中心とする熱帯に分布しており、代表品種として広くしられている‘ローズジャインアント‘など園芸植物として流通しているものの多くは交雑種となります。
+                </p>
+              </div>
+              <div class="col-lg-6 photoframe">
+                <img class="img-responsive" src="{{ media_url }}img/image003.jpg" alt="" width="400"/>
+              </div>
+            </div><!-- row -->
+
+            <div class="row article">
+              <div class="col-lg-8">
+                <p>
+                  花は先端が大きく開くラッパ型で、その大きさは品種によって異なり様々で直径7〜8cmのから、10cmを超える巨大輪のものもあります。<br />
+                  主な開花期は5〜10月頃で花色は白、ピンク、赤など様々で、連続開花性に優れ次々と咲かせてくれます。<br />
+                  豊明花き株式会社では半つる性の<a href="{{ base_url }}varieties/kids.html">キッズタイプ</a>とつる性の<a href="{{ base_url }}varieties/daddy.html">ダディータイプ</a>、<a href="{{ base_url }}varieties/mammy.html">マミータイプ</a>3シリーズを販売しております。
+                </p>
+              </div>
+              <div class="col-lg-4 photoframe">
+                <img class="img-responsive" src="{{ media_url }}img/CIMG1179.jpg" alt="" width="400"/>
+              </div>
+            </div>
+
+            <div class="row article">
+              <div class="col-lg-8">
+                <p>
+                <a href="{{ base_url }}varieties/kids.html">キッズタイプ</a>はコンパクトにまとまりやすく鉢物仕立てにお勧めの品して人気が高く、近年では母の日ギフトとしても注目されています。<br />
+                 <a href="{{ base_url }}varieties/daddy.html">ダディータイプ</a>、<a href="{{ base_url }}varieties/mammy.html">マミータイプ</a>は気温の高い時期にぐんぐんつるを伸ばし、フェンスやアーチに絡ませて楽しむのが一般的ですが、近年ではグリーンカーテンとしても親しまれるようになりました。
+                </p>
+              </div>
+              <div class="col-lg-4 photoframe">
+                <img class="img-responsive" src="{{ media_url }}img/CIMG6188.jpg" alt="" width="400"/>
+              </div>
+            </div><!-- row -->
+          </section><!-- feature -->
+
+          <!-- news flash -->
+          <section id="new_flash">
+            <div class="row article">
+              <h2 class="centered">最新情報</h2>
+              <div class="col-lg-4 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/growth_diary/mammy/20140717.jpg" alt="" width="400" />
+              </div>
+              <div class="col-lg-8 lefted">
+                <h3>成長日記をアップしました</h3>
+                <p>
+                  マンデビラの植え付けに始まりその後の生育過程を<a href="{{ base_url }}diary/daddy.html">ダディタイプ</a>、<a href="{{ base_url }}diary/mammy.html">マミータイプ</a>、<a href="{{ base_url }}diary/kids.html">キッズタイプ</a>別に観察しました。
+                </p>
+              </div>
+            </div><!-- row -->
+
+            <div class="row article">
+              <div class="col-lg-4 photoframe">
+                <img class="img-responsive" src="{{ media_url }}img/brochure.jpg" alt="" width="400"/>
+              </div>
+              <div class="col-lg-8 lefted">
+                <h3>キャラクターが誕生しました！</h3>
+                <p>
+                  「マンデビラ夏ものがたり」を親しみやすい植物として広く知っていただくために、キャラクターを作成して販売プロモーションを始めました。<br />
+                  家族で育てる楽しみをイメージした明るいキャラクターが夏の花「マンデビラ夏ものがたり」にピッタリ！<br />
+                  お店のどこにあるのか、ぜひ見つけてくださいね！
+                </p>
+              </div>
+            </div><!-- row -->
+<!--
+            <div class="row article">
+              <div class="col-lg-4 photoframe">
+                <img class="img-responsive" src="{{ media_url }}img/image021.jpg" alt="" width="400">
+              </div>
+              <div class="col-lg-8">
+                <p>
+                  豊明花き株式会社の社用車すべてに「マンデビラ夏ものがたり」販促用のマグネットシートが装着されました。
+                </p>
+              </div>
+            </div>
+
+            <div class="row article">
+              <div class="col-lg-4 photoframe">
+                <img class="img-responsive" src="{{ media_url }}img/track01.jpg" alt="" width="400">
+              </div>
+              <div class="col-lg-8 lefted">
+                <h3>ラッピングトラック快走中</h3>
+                <p>
+                  販促プロモーションの第一弾としてラッピングトラックを走らせることになりました。<br />
+                  主に中部圏と関東圏を中心に集荷＆配達で走り回る4tトラック2台、名古屋の街中を走り回る配達用2tトラック1台、合計3台のトラックが今期活躍しています。
+                </p>
+              </div>
+            </div>
+
+            <div class="row article">
+              <div class="col-lg-4 photoframe">
+                <img class="img-responsive" src="{{ media_url }}img/track02.jpg" alt="" width="400">
+              </div>
+              <div class="col-lg-8">
+                <p>
+                  走っているラッピングトラックを見つけることが出来たら、なにか良いことがあるかもしれませんよ？
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+-->
+        <aside class="col-lg-4" id="facebook-page">
+          <h2><a href="{{ facebook['url'] }}">フェイスブック</a></h2>
+          <p>
+            Facebookページ<a href="{{ facebook['url'] }}">{{ site['title'] }}</a>にてホットな話題をお届けしています。
+          </p>
+{% include "snippets/facebook_summary.html" %}
+        </aside>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_varieties' %}
+{%- set path='varieties/soil.html' %}
+
+{% block ogp_title %}マンデビラ夏ものがたりの土{% endblock %}
+{% block ogp_description -%}水はけのよい専用の土「マンデビラ夏ものがたりの土」の紹介です。{%- endblock %}
+{% block ogp_url %}{{ site['url'] }}varieties/soil.html{% endblock %}
+{% block ogp_site_name %}マンデビラ夏ものがたりの土{% endblock %}
+
+{% block header %}
+    <header class="title">
+      <section class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2><i class="fa fa-refresh"></i>マンデビラ夏ものがたりの土</h2>
+            <p>水はけのよい専用の土「マンデビラ夏ものがたりの土」の紹介です。</p>
+          </div>
+        </div><!-- row -->
+      </section>
+    </header><!-- header -->
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row article">
+        <h2 class="centered">水はけ抜群の培養土</h2>
+        <div class="col-lg-6">            
+          <p>
+            定植のときに、どんな土を使ったらよいか？ポイントはズバリ“水はけの良さ”<br />
+            マンデビラは乾燥には比較的強いのですが加湿には弱い植物です。<br />
+            水はけの良い土に定植し、土の状態を見てある程度乾燥したらお水をたっぷり与えてください。<br />
+           マンデビラの生産者であるとみたフラワーさま監修の元、花ちゃん培養土で有名な株式会社花ごころさまで作ったマンデビラ専用の土も好評発売中です！
+          </p>
+        </div><!-- col-lg-6 -->
+        <div class="col-lg-6 photoframe">      
+          <img class="img-responsive" src="{{ media_url }}img/soil.jpg" alt="" />
+          <div>マンデビラ夏ものがたりの土</div>
+        </div><!-- col-lg-6 -->
+      </div><!-- row -->
+    </div>
+{% endblock %}

@@ -1,0 +1,351 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: SPOT - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+@charset "UTF-8";
+//@option compress: no;
+
+//
+// Pre import
+//
+@import ".partial/config";
+
+//
+// Local variables
+//
+$color_nav_background: $color_carrot;
+//$color_title_background: $color_sunflower;
+//$color_title_background: $color_wisteria;
+//$color_title_background: $color_wetasphalt;
+//$color_title_background: $color_midnightblue;
+$color_title_background: $color_alizarin;
+
+//
+// General
+//
+body {
+  background-color: $color_palewhite;
+  font-weight: 300;
+  font-size: 16px;
+  color: $color_darkgray;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  margin-top: $margin_base*2;
+}
+
+// titles
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: $color_darkgray;
+}
+
+// paragraph & typographic
+p {
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+span {
+  &.circle {
+    font-size: 180%;
+    color: $color_sunflower;
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.lefted {
+  text-align: left;
+}
+
+i {
+  &.fa {
+    margin-right: .5em;
+  }
+  &.all {
+    color: $color_wisteria;
+  }
+  &.daddy {
+    color: $color_belizehole;
+  }
+  &.mammy {
+    color: $color_pomegranate;
+  }
+  &.kids {
+    color: $color_nephritis;
+  }
+}
+
+// links
+a {
+  color: $color_pomegranate;
+  word-wrap: break-word;
+
+  //-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  //-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  //-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  //-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  //transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+a:hover, a:focus {
+  color: $color_amethyst;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before, a:after {
+  //-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  //-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  //-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  //-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  //transition: color 0.1s ease-in, background 0.1s ease-in;    
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $color_darkgray;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.navbar {
+  font-size: 14px;
+  padding-top: 15px;
+  //padding-bottom: 15px;
+}
+
+.navbar-inverse {
+  background: $color_nav_background;
+  border-color: $color_clouds;
+}
+
+.navbar-inverse {
+  .navbar-brand {
+    //background: url(../img/logo.jpg) no-repeat left top;
+    //padding-left: 64px;
+    color: $color_palewhite;
+    //font-weight: bolder;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 1px;
+    i {
+      color: $color_sunflower;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+    
+  }
+  .navbar-nav {
+    li {
+      a {
+        color: $color_palewhite;
+        &:hover, &:focus {
+          color: $color_pomegranate;
+          background-color: transparent;
+        }
+      }
+      &.dropdown {
+        ul {
+          background-color: $color_nav_background;
+          li {
+            background-color: $color_nav_background;
+          }
+        }
+      }      
+    }    
+    .active {
+      a, a:hover, a:focus {
+        //color: $color_pomegranate;
+        color: $color_clouds;
+        background-color: $color_pomegranate;
+      }
+    }
+    .disabled {
+      a, a:hover, a:focus {
+        //color: $color_sunflower;
+        //background-color: transparent;
+      }
+    }
+  }
+}
+
+// tilt
+.tilt {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+ 
+  &:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}
+
+//
+// wrapper
+//
+
+// header
+header {
+  &.cover {
+    background: url(../img/cover.jpg) no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    border-bottom: solid 1px $color_black;
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    h1 {
+      margin-top: 280px;
+      color: $color_sunflower;
+      text-shadow: 1px 1px 3px $color_black; 
+      font-size: 54px;
+      font-weight: 20;
+      letter-spacing: 3px;
+    }
+    
+    h2 {
+      color: white;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+  
+  &.title {
+    background: $color_title_background;
+    padding-top: 40px;
+    margin-bottom: $margin_base;
+    h2 {
+      font-size: 150%;
+      color: $color_white;
+      //font-weight: 700;
+    }
+    p {
+      font-size: 80%;
+      color: $color_white;
+    }
+  }
+}
+
+
+// pre-footer
+#pre-footer {
+  $base_color: $color_palewhite;
+  color: $base_color;
+  background: $color_nephritis;
+  padding-top: $margin_base;
+  padding-bottom: $margin_base;
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: $color_midnightblue;
+  }
+  a {
+    color: $color_sunflower;
+    padding: 4px;
+    margin: 0;
+    &:hover {
+      color: $color_pumpkin;
+    }
+  }
+  section {
+    padding-bottom: $margin_base;
+  }
+  ul li {
+    //list-style: none;
+    a {
+    }
+  }
+  nav {
+    &#footer {
+      ul {
+        &.nav {
+          a {
+            color: $base_color;
+            &:hover {
+              color: $color_sunflower;
+              background: $color_greensea;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  background: $color_belizehole;
+  //background: $color_orange;
+  margin-top: 0;
+  margin-bottom: 0;
+  p {
+    color: $color_white;
+  }
+}
+
+// sections
+.article {
+  margin-bottom: $margin_base;
+  .photoframe {
+    img {
+      padding: 8px;
+      margin : 8px;
+      box-shadow: 4px 4px 12px $color_darkblue;
+    }
+    div {
+      margin-left: .5em;
+    }
+  }
+}
+
+//
+// Bootstrap 3 - Supporting Internet Explorer 8 and 9
+// http://www.joostrap.com/blog/bootstrap-3-supporting-internet-explorer-8-and-9
+//
+.container {
+  display:table;
+  width: 100%;
+}
+.row {
+  height: 100%;
+  display: table-row;
+}
+.col-sm-4 {
+  display: table-cell;
+}
+
+//
+// Post import
+//
+@import ".partial/lineup";
+//@import ".partial/priceing";

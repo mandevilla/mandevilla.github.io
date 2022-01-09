@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_shop' %}
+{%- set path='shop/cocoar.html' %}
+
+{% block ogp_title %}ARサービス「ココアル」に対応{% endblock %}
+{% block ogp_description -%}マンデビラ夏ものがたりのラベルはARサービス「ココアル」に対応しています。{%- endblock %}
+{% block ogp_url %}{{ site['url'] }}shop/cocoar.html{% endblock %}
+{% block ogp_site_name %}ココアル{% endblock %}
+
+{% block header %}
+    <header class="title">
+      <section class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2><i class="fa fa-music"></i>ココアル</h2>
+            <p>マンデビラ夏ものがたりのラベルはARサービス「ココアル」に対応しています。</p>
+          </div>
+        </div><!-- row -->
+      </section>
+    </header><!-- header -->
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row article">
+        <h2 class="centered">ココアル(COCOAR)</h2>
+        <section class="col-lg-9">
+          <div class="row article">
+            <div class="col-lg-6">            
+              <p>
+                マンデビラ夏ものがたりのラベルに、スマートフォンやタブレット端末のカメラをかざすと、水遣り等の詳しい管理方法を閲覧することができるサービスです。<br />
+                COCOAR*を使えば“いつでもどこでも”商品のくわしい情報を閲覧できるようになります。(別途アプリのインストールは必要です)
+              </p>
+            </div><!-- col-lg-6 -->
+            <div class="col-lg-6 photoframe">
+              <img class="img-responsive" src="{{ media_url }}img/cocoar.png" alt="" />
+              <div>ラベルをスマートフォンカメラでかざすと。。。</div>
+            </div><!-- col-lg-6 -->
+          </div><!-- row -->
+          <div class="row article">
+            <div class="col-lg-12">
+            *「COCOARラベル」はSELON(セロン工業株式会社www.e-selon.com)が提供するサービスです(特許出願済)
+            </div>
+          </div>
+        </section>
+        <aside class="col-lg-3">
+          <h3>ダウンロード</h3>
+          <div class="row">
+            <div class="col-lg-12">
+              <p>
+                iphone, ipadご利用の方<br />
+                <a href="https://itunes.apple.com/jp/app/cocoar/id571606059"><img class="img-responsive" src="{{ media_url }}img/appstore.png" alt="" /></a>
+              </p>
+              <p>
+                androidご利用の方<br />
+                <a href="https://play.google.com/store/apps/details?id=com.slab.cocoar"><img class="img-responsive" src="{{ media_url }}img/googleplay.png" alt="" /></a>
+              </p>
+              <p>
+                アプリの使い方は動画でもご覧いただけます<br />
+                <img class="img-responsive" src="{{ media_url }}img/qr_cocoar.png" alt="" />
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div><!-- row -->
+    </div>
+{% endblock %}

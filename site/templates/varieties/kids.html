@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{%- set nav_id='#nav_varieties' %}
+{%- set path='varieties/kids.html' %}
+
+{% block ogp_title %}キッズタイプ取扱商品リスト{% endblock %}
+{% block ogp_description -%}半つる性のキッズタイプの商品ラインナップです。{%- endblock %}
+{% block ogp_url %}{{ site['url'] }}varieties/kids.html{% endblock %}
+{% block ogp_site_name %}キッズタイプ{% endblock %}
+
+{% block header %}
+    <header class="title">
+      <section class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2><i class="fa fa-user"></i>キッズタイプ</h2>
+            <p>半つる性のキッズタイプの商品ラインナップです。</p>
+          </div>
+        </div><!-- row -->
+      </section>
+    </header><!-- header -->
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- variety description -->
+          <section id="variety-description">
+            <div class="row article">
+              <h3 class="centered">こんもり茂る「キッズタイプ」</h3>
+              <div class="col-lg-2">
+                <img class="img-responsive" src="{{ media_url }}img/kids_character.jpg" alt="" />
+              </div>
+              <div class="col-lg-6">
+                <p>キッズタイプは、半つる性で、まとまりやすいこんもりタイプです。</p>
+                <p>ダディタイプやマミータイプに比べ早咲きの品種で、株もコンパクトに仕上げることができるので、自然（ボサ）仕立やハンギングに適しています。</p>
+                <p>また、室内の明かりでも花を咲かせることができ、水切れにも強いので、鉢花としても作りやすくお薦めです。</p>
+                <p>基本的には暑さに強く、次々につぼみを付け花を咲かせる夏の花ですが、７月末〜８月末の高温期になると、若干つぼみの数が少なくなります。</p>
+                <p>その場合は、風通しの良い涼しい場所で管理していただけると、少しずつ花を咲かせることができます。</p>          
+              </div>
+              <div class="col-lg-4 photoframe">
+                <img class="img-responsive" src="{{ media_url }}img/IMG_2440.jpg" alt="" />
+              </div>
+            </div><!-- row article -->
+          </section><!-- variety description -->
+          <!-- lineup -->
+          <section id="lineup" class="container">
+            <h3 class="centered">ラインナップ</h3>
+            <div class="row">
+              <div class="col-lg-12">
+                <ul class="lineup-items">
+                  <li class="lineup-item">
+                    <h5><i class="fa fa-user kids"></i>リオ・ピンク</h5>
+                    <img class="photo" src="{{ media_url }}img/photos/09.jpg" alt=""/>
+                    <ul>
+                      <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />ピンク</li>
+                      <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+                    </ul>
+                  </li>
+                  <li class="lineup-item">
+                    <h5><i class="fa fa-user kids"></i>リオ・ディープレッド</h5>
+                    <img class="photo" src="{{ media_url }}img/photos/10.jpg" alt=""/>
+                    <ul>
+                      <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />赤</li>
+                      <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+                    </ul>
+                  </li>
+                  <li class="lineup-item">
+                    <h5><i class="fa fa-user kids"></i>リオ・ホットピンク</h5>
+                    <img class="photo" src="{{ media_url }}img/photos/11.jpg" alt=""/>
+                    <ul>
+                      <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />濃ピンク</li>
+                      <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+                    </ul>
+                  </li>
+                  <li class="lineup-item">
+                    <h5><i class="fa fa-user kids"></i>リオ・ライトピンク</h5>
+                    <img class="photo" src="{{ media_url }}img/photos/12.jpg" alt=""/>
+                    <ul>
+                      <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />薄ピンク</li>
+                      <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+                       <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+                       <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+                     </ul>
+                   </li>
+                   <li class="lineup-item">
+                     <h5><i class="fa fa-user kids"></i>アロハ・ブライトピンク</h5>
+                     <img class="photo" src="{{ media_url }}img/photos/13.jpg" alt=""/>
+                     <ul>
+                       <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />濃ピンク</li>
+                      <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+                    </ul>
+                  </li>
+                  <li class="lineup-item">
+                    <h5><i class="fa fa-user kids"></i>アロハ・リーガルルビー</h5>
+                    <img class="photo" src="{{ media_url }}img/photos/14.jpg" alt=""/>
+                    <ul>
+                      <li><img src="{{ media_url }}img/icons/b0.png" alt="花の色" />濃赤</li>
+                      <li><img src="{{ media_url }}img/icons/b1.png" alt="花径" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b2.png" alt="成長度" />&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b3.png" alt="強健度" />&#9829;&#9829;</li>
+                      <li><img src="{{ media_url }}img/icons/b5.png" alt="仕立て" />自然(ボサ)・アンドン</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div><!-- row -->
+          </section><!-- lineup -->
+        </div>
+      </div>
+    </div>
+
+    <!-- other types -->
+    <section class="container">
+      <div class="row centered">
+        <h3>他のタイプ</h3>
+        <div class="col-lg-4">
+          <div>
+            <a href="{{ base_url }}varieties/index.html"><img class="img-responsive" src="{{ media_url }}img/all.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <a href="{{ base_url }}varieties/daddy.html"><img class="img-responsive" src="{{ media_url }}img/daddy.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <a href="{{ base_url }}varieties/mammy.html"><img class="img-responsive" src="{{ media_url }}img/mammy.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <a href="{{ base_url }}varieties/soil.html"><img class="img-responsive" src="{{ media_url }}" alt="" /></a>
+          </div>
+        </div>
+      </div><!-- row -->
+    </section><!-- other types -->    
+{% endblock %}
+
+{% block extra_script %}
+    <script src="{{ media_url }}js/isotope.pkgd.min.js"></script>
+    <script>
+      $(window).load(function() {
+        var $container = $('.lineup-items');
+        $container.isotope({
+          filter: '*',
+          animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+          }
+        });
+ 
+        $('.lineup-filter a').click(function() {
+          $('.lineup-filter .active').removeClass('active');
+          $(this).addClass('active');
+ 
+          var selector = $(this).attr('data-filter');
+          $container.isotope({
+            filter: selector,
+            animationOptions: {
+              duration: 750,
+              easing: 'linear',
+              queue: false
+            }
+          });
+          return false;
+        }); 
+      });   
+    </script>
+{% endblock %}
