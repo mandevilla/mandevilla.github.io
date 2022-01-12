@@ -1,14 +1,6 @@
-# Mandevilla
+# mandevilla.githum.io
 
-## General
-
-* Bootstrap version
-
-## Make
-
-make
-
-```shell
-make
-make test
-```
+* 2022/01/12現在
+    * 古いアプリケーションなので現システムでのビルドはできていない
+    * そのためdocsディレクトリに成果物を配置しそのまま公開している
+    * なので修正する場合はdocsディレクトリのhtmlを直接編集してコミットする
